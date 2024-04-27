@@ -1,0 +1,10 @@
+<section>
+    <form [formGroup]="credenciales" enctype="multipart/form-data">
+        <h1>Panel de Administración</h1>
+        <h3>{{mensaje}}</h3>
+        <input id="input_user_login" name="User" type="text" placeholder="Usuario" formControlName="user" maxlength="20" required>
+        <input id="input_pass_login" name="Password" type="password" placeholder="Contraseña" formControlName="pass" maxlength="20" required>
+        <button id="boton_login" (click)="LogIn()">Iniciar Sesión</button>
+        <a (click)="navigateToHome()">Volver a Inicio</a>
+    </form>
+</section>

@@ -1,0 +1,72 @@
+.Loading_Page {
+    transition: .5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(40,40,40);
+    background: radial-gradient(circle, rgba(40,40,40,1) 0%, rgba(20,20,20,1) 100%);
+}
+.In_Box {
+    animation-name: Intro_Loading_Page;
+    animation-duration: 2s;
+    padding: 0;
+    margin: 0;
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFC700;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #FFC700;
+}
+@keyframes Intro_Loading_Page {
+    from {
+        opacity: 0;
+        width: 70%;
+        height: 70%;
+    }
+    to {
+        opacity: 1;
+        width: 95%;
+        height: 95%;
+    }
+}
+
+.Loaded_Page {
+    padding: 0;
+    margin: 0;
+    perspective: 1000px;
+}
+.Router_Outlet {
+    animation-name: Intro_Loaded_Page;
+    animation-duration: 5s;
+    padding: 0;
+    margin: 0;
+}
+@keyframes Intro_Loaded_Page {
+    0% {
+        scale: 0.7;
+        opacity: 0;
+        filter: saturate(0);
+        rotate: -2deg;
+        transform: rotateY(15deg);
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        filter: saturate(0);
+    }
+    100% {
+        rotate: 0;
+        scale: 1;
+        filter: saturate(100%);
+        transform: rotateX(0deg);
+        transform: rotateY(0deg);
+    }
+}

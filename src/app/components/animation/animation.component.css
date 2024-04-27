@@ -1,0 +1,230 @@
+body {
+    transition: 0.5s;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    perspective: 1000px;
+    border-radius: 3px;
+    overflow: hidden;
+    font-family: Quicksand;
+}
+
+body:hover {
+    section {
+        transition: .5s;
+        background-color: rgba(100, 100, 100, 0.7);
+    }
+}
+
+section {
+    transition: 0.5s;
+    padding: 20px;
+    margin: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(40, 40, 40, 0.7);
+}
+
+section:hover {
+    transition: 0.5s;
+    transform: rotateY(-20deg);
+}
+
+.Pantalla_1 {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: 100px;
+    border: 6px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: thin;
+    /* Puedes usar "auto" o "thin" */
+    scrollbar-color: #FFC700 rgba(40, 40, 40, 1);
+    scroll-behavior: smooth;
+}
+
+.Base_Pantalla_1 {
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    background: rgb(40, 40, 40);
+    background: linear-gradient(180deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 1) 50%, rgba(30, 30, 30, 1) 100%);
+}
+
+.Base_Pantalla_2 {
+    padding: 0;
+    margin: 0;
+    width: 70px;
+    height: 5px;
+    background-color: black;
+}
+
+.mini_web_container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    display: block;
+    scroll-snap-type: y proximity;
+}
+
+.header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid white;
+    background: rgb(159, 124, 0);
+    background: linear-gradient(270deg, rgba(159, 124, 0, 1) 0%, rgba(255, 199, 0, 1) 100%);
+
+    p {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        font-size: 5px;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.home {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url('../../../assets/Backgrounds/Mini_background.webp');
+    background-size: 100%;
+    background-position: top center;
+    scroll-snap-align: end;
+}
+
+.Btn_box {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    div {
+        cursor: pointer;
+        transition: 0.5s;
+        padding: 0;
+        margin: 0;
+        width: 35px;
+        height: 15px;
+        background-color: rgba(150, 150, 150, 0.3);
+        border: 1px solid #FFC700;
+        border-radius: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(200, 200, 200);
+        font-size: 6px;
+        font-weight: bold;
+    }
+
+    div:hover {
+        transition: 0.5s;
+        scale: 1.2;
+        filter: brightness(150%);
+    }
+}
+.Videos {
+    transition: .5s;
+    animation-name: IntroVideos;
+    animation-duration: 1s;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 70px;
+}
+.Videos:hover {
+    transition: .5s;
+    scale: 1.05;
+    filter: brightness(150%);
+}
+.Fotos {
+    transition: .5s;
+    animation-name: IntroVideos;
+    animation-duration: 1s;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 70px;
+}
+.Fotos:hover {
+    transition: .5s;
+    scale: 1.05;
+    filter: brightness(150%);
+}
+@keyframes IntroVideos {
+    from {
+        rotate: 40deg;
+        scale: 0.5;
+        opacity: 0;
+    }
+    to {
+        rotate: 0;
+        scale: 1;
+        opacity: 1;
+    }
+}
+.footer {
+    scroll-snap-align: center;
+    border-top: 1px solid white;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    p {
+        color: white;
+        font-size: 9px;
+        font-weight: bold;
+    }
+}
+
+.mensaje {
+    scroll-snap-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+}

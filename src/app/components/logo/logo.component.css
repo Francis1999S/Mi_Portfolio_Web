@@ -1,0 +1,403 @@
+
+.Container_Logon {
+    padding: 10px 0 0 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    perspective: 1000px;
+    font-family: Electrolize;
+    h1 {
+        font-size: 200%;
+    }
+}
+.Francis {
+    transition: 0.5s;
+    width: auto;
+    color: #FFC700;
+}
+.Francis2 {
+    animation-name: Intro_Logon3;
+    animation-duration: 3s;
+    transition: 0.5s;
+    overflow: hidden;
+    width: 0;
+    color: #FFC700;
+}
+.Seura {
+    transition: 0.5s;
+    width: auto;
+    color: #4CCD99;
+}
+.Seura2 {
+    animation-name: Intro_Logon4;
+    animation-duration: 3s;
+    overflow: hidden;
+    transition: 0.5s;
+    width: 0;
+    color: #4CCD99;
+}
+.Light_bar_Logo {
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 0;
+    margin: 0;
+    width: 160px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px white;
+    scale: 2;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@media (min-width: 767px) {
+    @keyframes Intro_Logon1 {
+        0% {
+            width: 300px;
+        }
+        70% {
+            width: 300px;
+        }
+        100% {
+            width: 92px;
+        }
+    }
+    @keyframes Intro_Logon2 {
+        0% {
+            width: 298px;
+        }
+        70% {
+            width: 298px;
+        }
+        100% {
+            width: 90px;
+        }
+    }
+    @keyframes Intro_Logon3 {
+        0% {
+            width: 115px;
+        }
+        70% {
+            width: 115px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+    @keyframes Intro_Logon4 {
+        0% {
+            width: 85px;
+        }
+        70% {
+            width: 85px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+    @keyframes Intro_Logon5 {
+        0% {
+            transform: rotate(-180deg);
+        }
+        70% {
+            transform: rotate(-180deg);
+        }
+        100% {
+            transform: rotate(0);
+        }
+    }
+    .Light_bar_Logo {
+        height: 25px;
+    }
+    .Slogan {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 7px rgb(40, 40, 40);
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Logon2 {
+        animation-name: Intro_Logon1;
+        animation-duration: 3s;
+        transition: 0.5s;
+        padding: 0;
+        margin: 0;
+        width: 92px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        overflow: hidden;
+        background-color: rgb(100, 100, 100);
+        perspective: 1000px;
+    }
+    .Logon2:hover {
+        transition: 0.5s 0.3s ease-in-out;
+        width: 300px;
+        .LogonText2 {
+            transition: 0.5s 0.3s ease-in-out;
+            width: 298px;
+        }
+        .Middle_bar {
+            transition: 0.5s;
+            transform: rotate(-180deg);
+        }
+        .Francis {
+            transition: 0.5s;
+            filter: hue-rotate(360deg);
+        }
+        .Francis2 {
+            transition: 0.5s 0.5s ease-in-out;
+            width: 115px;
+        }
+        .Seura {
+            transition: 0.5s;
+            filter: hue-rotate(360deg);
+        }
+        .Seura2 {
+            transition: 0.5s 0.5s ease-in-out;
+            width: 85px;
+        }
+        .LogonText {
+            transition: 0.5s;
+        }
+        .G_point {
+            transition: .5s 1s ease-in-out;
+            right: 287px;
+            background-color: #FFC700;
+        }
+    }
+    .LogonText2 {
+        animation-name: Intro_Logon2;
+        animation-duration: 3s;
+        transition: 0.5s;
+        z-index: 20;
+        padding: 0;
+        margin: 0;
+        width: 90px;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        color: rgb(230, 230, 230);
+        background-color: rgb(40, 40, 40);
+        position: absolute;
+        text-align: center;
+        border-radius: 3px;
+        h1 {
+            padding: 0;
+            margin: 0;
+            height: auto;
+            font-weight: 100;
+            font-size: 200%;
+        }
+    }
+    .Middle_bar {
+        animation-name: Intro_Logon5;
+        animation-duration: 3s;
+        transition: 0.5s 0.5s ease-in-out;
+        padding: 0;
+        margin: 0 13px 0 13px;
+        width: 1px;
+        height: 40px;
+        background-color: rgb(230, 230, 230);
+    }
+    .G_point {
+        transition: 0.5s 0.5s ease-in-out;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        border-radius: 20%;
+        margin: 0;
+        width: 6px;
+        height: 6px;
+        background-color: #4CCD99;
+    }
+}
+@media (max-width: 768px) {
+    @keyframes Intro_Logon1 {
+        0% {
+            width: 160px;
+        }
+        70% {
+            width: 160px;
+        }
+        100% {
+            width: 50px;
+        }
+    }
+    @keyframes Intro_Logon2 {
+        0% {
+            width: 158px;
+        }
+        70% {
+            width: 158px;
+        }
+        100% {
+            width: 48px;
+        }
+    }
+    @keyframes Intro_Logon3 {
+        0% {
+            width: 60px;
+        }
+        70% {
+            width: 60px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+    @keyframes Intro_Logon4 {
+        0% {
+            width: 45px;
+        }
+        70% {
+            width: 45px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+    @keyframes Intro_Logon5 {
+        0% {
+            transform: rotate(-180deg);
+        }
+        70% {
+            transform: rotate(-180deg);
+        }
+        100% {
+            transform: rotate(0);
+        }
+    }
+    .Light_bar_Logo {
+        height: 10px;
+    }
+    .Slogan {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 7px rgb(40, 40, 40);
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 70%;
+    }
+    .Logon2 {
+        animation-name: Intro_Logon1;
+        animation-duration: 3s;
+        transition: 0.5s;
+        padding: 0;
+        margin: 0;
+        width: 50px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        overflow: hidden;
+        background-color: rgb(100, 100, 100);
+    }
+    .Logon2:hover {
+        transition: 0.2s 0.3s ease-in-out;
+        width: 160px;
+        .LogonText2 {
+            transition: 0.2s 0.3s ease-in-out;
+            width: 158px;
+        }
+        .Middle_bar {
+            transition: 0.5s;
+            transform: rotate(-180deg);
+        }
+        .Francis {
+            transition: 0.5s;
+            filter: hue-rotate(360deg);
+        }
+        .Francis2 {
+            transition: 0.5s 0.5s ease-in-out;
+            width: 60px;
+        }
+        .Seura {
+            transition: 0.5s;
+            filter: hue-rotate(360deg);
+        }
+        .Seura2 {
+            transition: 0.5s 0.5s ease-in-out;
+            width: 45px;
+        }
+        .LogonText {
+            transition: 0.5s;
+        }
+        .G_point {
+            transition: .5s 1s ease-in-out;
+            right: 150px;
+            background-color: #FFC700;
+        }
+    }
+    .LogonText2 {
+        animation-name: Intro_Logon2;
+        animation-duration: 3s;
+        transition: 0.5s;
+        z-index: 20;
+        padding: 0;
+        margin: 0;
+        width: 48px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        color: white;
+        background-color: rgb(40, 40, 40);
+        position: absolute;
+        text-align: center;
+        border-radius: 3px;
+        h1 {
+            padding: 0;
+            margin: 0;
+            height: auto;
+            font-weight: 100;
+            font-size: 100%;
+        }
+    }
+    .Middle_bar {
+        animation-name: Intro_Logon5;
+        animation-duration: 3s;
+        transition: 0.5s 0.5s ease-in-out;
+        padding: 0;
+        margin: 0 7px 0 7px;
+        width: 1px;
+        height: 20px;
+        background-color: rgb(230, 230, 230);
+    }
+    .G_point {
+        transition: 0.5s 0.5s ease-in-out;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        border-radius: 20%;
+        margin: 0;
+        width: 6px;
+        height: 6px;
+        background-color: #4CCD99;
+    }
+}

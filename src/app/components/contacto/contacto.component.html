@@ -1,0 +1,18 @@
+<body id="background_contacto_id">
+    <section id="Contacto_window_3DEXF">
+        <img class="Img_Close" src="../../../assets/Icons/close.gif" (click)="this.dataService.contacto()" >
+        <h1>CONTÁCTAME</h1>
+            <a href="https://api.whatsapp.com/send?phone=5493837698846" target="_blank"><img src="../../../assets/Icons/WhatsApp.png">WhatsApp: +54 9 3837-698846</a>
+            <a href="mailto:seurafrancis99@gmail.com" target="_blank"><img src="../../../assets/Icons/Mail.png">E-mail: seurafrancis99@gmail.com</a>
+            <form id="formulario_mensaje" [formGroup]="mensaje" enctype="multipart/form-data">
+                <p>o deja un mensaje:</p>
+                <input id="Input_mensaje_nombre" type="text" placeholder="Nombre" formControlName="nombre" maxlength="140" required>
+                <textarea id="Input_mensaje_mensaje" cols="10" rows="3" maxlength="900" placeholder="Mensaje" formControlName="mensaje" required></textarea>
+                <input id="Input_mensaje_numero" type="number" placeholder="Teléfono" formControlName="telefono" maxlength="45" required>
+                <input type="email" placeholder="E-mail (Opcional)" formControlName="email" maxlength="140">
+                <button id="Boton_enviar_mensaje" (click)="enviarMensaje()">Enviar mensaje</button>
+                <img id="Loader_caja_mensajes" src="../../../assets/Icons/Loader.gif">
+            </form>
+            <p id="Mensaje_de_exito">¡Mensaje enviado con éxito!</p>
+    </section>
+</body>

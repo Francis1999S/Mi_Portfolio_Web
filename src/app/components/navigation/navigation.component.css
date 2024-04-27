@@ -1,0 +1,204 @@
+section {
+    transition: 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    perspective: 1000px;
+    ul {
+        transition: .5s;
+        margin: 0;
+        padding: 0 0 0 20px;
+        width: 100px;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: end;
+        flex-direction: column;
+        border-radius: 3px;
+        li {
+            transition: 0.5s;
+            text-align: start;
+            padding: 0;
+            margin: 0;
+            border-bottom: 1px solid rgba(230, 230, 230, 0);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+        li:active {
+            transition: 0.1s;
+            text-shadow: 0 0 25px white;
+            border-bottom: 1px solid #FFC700;
+            width: 180px;
+        }
+    }
+    ul:hover {
+        transition: .5s;
+        transform: rotateY(-20deg);
+    }
+}
+
+@media (min-width: 767px) {
+    .pop1 {
+        transition: .5s .5s ease-in-out;
+        top: -10px;
+        right: 105px;
+    }
+    .pop2 {
+        transition: .5s .6s ease-in-out;
+        top: -10px;
+        right: 105px;
+    }
+    .pop3 {
+        transition: .5s .7s ease-in-out;
+        top: -10px;
+        right: 105px;
+    }
+    .pop4 {
+        transition: .5s .8s ease-in-out;
+        top: -10px;
+        right: 105px;
+    }
+    section {
+        height: 250px;
+        width: 120px;
+        display: flex;
+        ul {
+            li {
+                width: 100px;
+            }
+        }
+    }
+    #li_Inicio:hover {
+        transition: 0.5s;
+        color: white;
+        width: 150px;
+        border-bottom: 1px solid #4CCD99;
+    }
+    #li_Trabajo:hover {
+        transition: 0.5s;
+        color: white;
+        width: 185px;
+        border-bottom: 1px solid #4CCD99;
+    }
+    #li_Acerca:hover {
+        transition: 0.5s;
+        color: white;
+        width: 200px;
+        border-bottom: 1px solid #4CCD99;
+    }
+    #li_Contacto:hover {
+        transition: 0.5s;
+        color: white;
+        width: 175px;
+        border-bottom: 1px solid #4CCD99;
+    }
+    section:hover {
+        transition: .5s;
+      ul {
+        transition: .5s;
+        background-color: rgba(100, 100, 100, 0.7);
+      }
+        .pop1 {
+            transition: .5s .5s ease-in-out;
+            top: 42px;
+        }  
+        .pop2 {
+            transition: .5s .6s ease-in-out;
+            top: 96px;
+        }
+        .pop3 {
+            transition: .5s .7s ease-in-out;
+            top: 151px;
+        }
+        .pop4 {
+            transition: .5s .8s ease-in-out;
+            top: 206px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    section {
+        transform: translate(0, -50%);
+        overflow: hidden;
+        padding-left: 10px;
+        margin-top: 40vh;
+        height: 0;
+        display: none;
+        width: 170px;
+        font-size: 130%;
+        justify-content: center;
+        align-items: center;
+        ul {
+            overflow: hidden;
+            background-color: rgba(100, 100, 100, 0.7);
+            width: 160px;
+            height: 400px;
+            li {
+                transform: translate(150%,0);
+                align-items: start;
+                width: 120px;
+                color: white;
+            }
+        }
+
+    }
+    .pop1 {
+        transition: .5s .5s ease-in-out;
+        right: 125px;
+        top: -55px;
+    }
+    .pop2 {
+        transition: .5s .6s ease-in-out;
+        right: 125px;
+        top: -55px;
+    }
+    .pop3 {
+        transition: .5s .7s ease-in-out;
+        right: 125px;
+        top: -55px;
+    }
+    .pop4 {
+        transition: .5s .8s ease-in-out;
+        right: 125px;
+        top: -55px;
+    }
+}
+
+.pop1 {
+    padding: 0;
+    margin: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 1px;
+    background-color: #4CCD99;
+    position: absolute;
+}
+.pop2 {
+    padding: 0;
+    margin: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 1px;
+    background-color: #4CCD99;
+    position: absolute;
+}
+.pop3 {
+    padding: 0;
+    margin: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 1px;
+    background-color: #4CCD99;
+    position: absolute;
+}
+.pop4 {
+    padding: 0;
+    margin: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 1px;
+    background-color: #4CCD99;
+    position: absolute;
+}

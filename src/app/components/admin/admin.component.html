@@ -1,0 +1,40 @@
+<section>
+    <div id="Loader_Background_Mensajes_Admin">
+        <img src="../../../assets/Icons/Loader.gif">
+    </div>
+    <div class="Back_home" (click)="navigateToHome()">
+        <img src="../../../assets/Icons/home.gif">
+    </div>
+    <h1 class="Titulo">Bandeja de Entrada</h1>
+    <div class="Bandeja_entrada">
+        <div class="Block_Scroll">
+            <div class="Tarjeta_Mensaje" *ngFor=" let mensaje of Mensajes">
+                <div class="Row1">
+                    <div class="ID">
+                        ID: {{this.mensaje.id}}
+                    </div>
+                    <div class="FECHA">
+                        Mensaje enviado el: {{this.mensaje.fecha | date:'fullDate' }}
+                    </div>
+                    <div class="DELETE" (click)="eliminar(this.mensaje.id)">
+                        <img src="../../../assets/Icons/Delete.gif">
+                    </div>
+                </div>
+                <div class="Row2">
+                    Mensaje enviado por: {{this.mensaje.nombre}}
+                </div>
+                <div class="Row3">
+                    Mensaje: {{this.mensaje.mensaje}}
+                </div>
+                <div class="Row4">
+                    <div class="TELEFONO">
+                        Teléfono: {{this.mensaje.telefono}}
+                    </div>
+                    <div class="EMAIL">
+                        E-mail: {{this.mensaje.email}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,222 @@
+#background_contacto_id {
+    transition: .5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    perspective: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    section {
+        width: 40%;
+        height: 90%;
+    }
+}
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        height: 550px;
+    }
+}
+
+section {
+    transition: 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    background-color: rgba(40, 40, 40, 0.8);
+    box-shadow: 0 0 10px black;
+    transform: rotateY(90deg);
+
+    h1 {
+        padding: 20px 0 20px 0;
+        margin: 0;
+        height: auto;
+        width: 90%;
+        text-align: center;
+        color: #FFC700;
+        border-bottom: 1px solid #4CCD99;
+    }
+
+    a {
+        transition: .5s;
+        padding: 5px 0 5px 10px;
+        margin: 15px 0 15px 0;
+        border-radius: 5px;
+        height: auto;
+        width: 80%;
+        text-align: start;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+
+        img {
+            padding: 0;
+            margin: 0 10px 0 0;
+            width: 25px;
+        }
+    }
+
+    a:hover {
+        transition: .5s;
+        color: #FFC700;
+        margin-left: 10px;
+        background-color: rgba(100, 100, 100);
+    }
+
+    .Img_Close {
+        transition: 0.5s;
+        padding: 0;
+        margin: 0;
+        width: 35px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .Img_Close:hover {
+        transition: 0.5s;
+        scale: 1.2;
+    }
+
+    .Img_Close:active {
+        transition: 0.1s;
+        scale: 0.9;
+        filter: brightness(50%);
+    }
+}
+
+form {
+    border-top: 1px solid #4CCD99;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #FFC700 #ffc80000;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    height: auto;
+    display: block;
+    flex-direction: column;
+    input {
+        margin: 10px 0 10px 0;
+        padding: 5px;
+        font-size: 100%;
+        transition: .5s;
+        border: 1px solid #296d52;
+        font-family: Titillium Web;
+        color: rgb(210, 210, 210);
+        width: 90%;
+        background-color: rgb(40, 40, 40);
+        outline: none;
+        border-radius: 3px;
+    }
+
+    input:focus {
+        transition: .5s;
+        background-color: rgb(70, 70, 70);
+        border: 1px solid #4CCD99;
+    }
+
+    textarea {
+        margin: 10px 0 10px 0;
+        padding: 5px;
+        font-size: 100%;
+        transition: .5s;
+        font-family: Titillium Web;
+        color: rgb(210, 210, 210);
+        width: 90%;
+        height: 50px;
+        resize: none;
+        background-color: rgb(40, 40, 40);
+        border: 1px solid #296d52;
+        scrollbar-width: thin;
+        scrollbar-color: #FFC700 #ffc80000;
+        border-radius: 3px;
+        outline: none;
+    }
+    textarea:focus {
+        transition: .5s;
+        background-color: rgb(70, 70, 70);
+        border: 1px solid #4CCD99;
+        height: 150px;
+    }
+    p {
+        padding: 0;
+        margin: 15px 0 20px 0;
+        color: #FFC700;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#Boton_enviar_mensaje {
+    transition: .5s;
+    border: 1px solid #806400;
+    background-color: rgb(40, 40, 40);
+    border-radius: 3px;
+    color: rgb(150, 150, 150);
+    font-family: Titillium Web;
+    font-size: 100%;
+    padding: 5px 70px 5px 70px;
+    margin: 15px 0 15px 0;
+    cursor: pointer;
+    box-shadow: 0 0 5px #ffc80000;
+    font-weight: bold;
+    display: flex;
+}
+
+#Boton_enviar_mensaje:hover {
+    transition: .5s;
+    background-color: rgb(70, 70, 70);
+    border: 1px solid #FFC700;
+    color: white;
+    box-shadow: 0 0 5px #FFC700;
+}
+#Boton_enviar_mensaje:active {
+    transition: .1s;
+    background-color: rgb(40, 40, 40);
+    scale: 0.9;
+}
+#Mensaje_de_exito {
+    animation-name: Intro_mensaje_exito;
+    animation-duration: 1s;
+    width: 90%;
+    padding: 15px 0 0 0;
+    text-align: center;
+    color: #FFC700;
+    font-weight: bold;
+    font-size: 110%;
+    border-top: 1px solid #4CCD99;
+    display: none;
+    justify-content: center;
+}
+@keyframes Intro_mensaje_exito {
+    from {
+        scale: 0.5;
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+    
+}
+#Loader_caja_mensajes {
+    animation-name: Intro_mensaje_exito;
+    animation-duration: .5s;
+    margin: 15px 0 15px 140px;
+    width: 35px;
+    padding: 0;
+    display: none;
+}

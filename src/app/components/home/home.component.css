@@ -1,0 +1,204 @@
+body {
+    padding: 0;
+    margin: 0;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    perspective: 1000px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    perspective: 1000px;
+    background: rgb(0, 127, 115);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    h1 {
+        font-size: 300%;
+    }
+    h2 {
+        font-weight: 100;
+    }
+}
+
+@media (min-width: 767px) {
+    app-animation {
+        padding: 0;
+        margin: 0 0 0 40px;
+        width: auto;
+        height: auto;
+        scale: 1.2;
+    }
+    section {
+        background-position: center;
+        background-size: 100% auto;
+        align-items: center;
+    }
+
+    .BoxHOLA {
+        margin: 0;
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    app-animation {
+        padding: 0;
+        margin: 50px 0 0 0;
+        width: auto;
+        height: auto;
+        scale: 1.4;
+    }
+
+    section {
+        background-position: center center;
+        background-size: auto 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .BoxHOLA {
+        margin: 0;
+        width: 80%;
+    }
+}
+
+.BoxHOLA {
+    transform: rotateY(-1deg);
+    transition: 0.5s;
+    padding: 15px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: rgba(40, 40, 40, 0.7);
+    border-radius: 3px;
+    h1,
+    h2 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: start;
+
+    }
+
+    h1 {
+        font-weight: bold;
+        color: #FFC700;
+    }
+
+    h2 {
+        color: white;
+    }
+}
+
+.BoxHOLA:hover {
+    transition: 0.5s;
+    transform: rotateY(10deg);
+    background-color: rgba(100, 100, 100, 0.7);
+    .bar {
+        transition: 0.5s;
+        width: 100%;
+    }
+
+    .pop1 {
+        transition: .5s .5s ease-in-out;
+        background-color: #FFC700;
+        right: 98%;
+    }
+
+    .pop2 {
+        transition: .5s .5s ease-in-out;
+        background-color: #FFC700;
+        top: 97%;
+    }
+
+    .pop3 {
+        transition: .5s .5s ease-in-out;
+        background-color: #FFC700;
+        left: 98%;
+    }
+
+    .pop4 {
+        transition: .5s .5s ease-in-out;
+        background-color: #4CCD99;
+        bottom: 97%;
+    }
+}
+
+.bar {
+    transform: translate(0, 0);
+    transition: 0.5s;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 1px;
+    background-color: #4CCD99;
+    box-shadow: 0 0 10px #00ff99;
+}
+
+.pop1 {
+    transition: 1s .5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #4CCD99;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+.pop2 {
+    transition: 1s .6s ease-in-out;
+    padding: 0;
+    margin: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #FFC700;
+    ;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.pop3 {
+    transition: 1s .7s ease-in-out;
+    padding: 0;
+    margin: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #FFC700;
+    ;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+}
+
+.pop4 {
+    transition: 1s .8s ease-in-out;
+    padding: 0;
+    margin: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #FFC700;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}

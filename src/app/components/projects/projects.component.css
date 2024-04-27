@@ -1,0 +1,165 @@
+@keyframes Intro_Projects {
+    from {
+        transform: translate(-100%,0);
+    }
+    to {
+        transform: translate(0,0);
+    }
+    
+}
+body {
+    animation-name: Intro_Projects;
+    animation-duration: 1s;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 400vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    background-image: url('../../../assets/Backgrounds/Projects_Background.png');
+    background-size: auto 100%;
+    h1 {
+        transition: .5s;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        font-weight: bold;
+        font-size: 300%;
+        color: #FFC700;
+    }
+    .h1_t:hover {
+        transition: .5s;
+        transform: rotateY(30deg);
+    }
+    h2 {
+        transition: .5s;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        color: white;
+        font-weight: 100;
+    }
+    .h2_t:hover {
+        transition: .5s;
+        transform: rotateY(-30deg);
+    }
+}
+.Title {
+    transition: .5s;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    perspective: 1000px;
+}
+.Title:hover {
+    transition: 0.5s ease-in-out;
+
+    .bar {
+        transition: 0.5s ease-in-out;
+        width: 80%;
+    }
+}
+.bar {
+    transform: translate(0, 0);
+    transition: 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+    height: 1px;
+    background-color: #4CCD99;
+    box-shadow: 0 0 10px #00ff99;
+}
+.BBDD_CV {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Tarjeta_Base_CV {
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(40,40,40, 0.7);
+    border-radius: 3px;
+}
+
+
+app-contacto {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2700;
+    display: none;
+}
+@media (min-width: 767px) {
+    app-navigation {
+        position: fixed;
+        top: 0px;
+        right: 17px;
+        margin: 0;
+        padding: 0;
+        z-index: 2000;
+    }   
+    
+app-logo {
+    position: fixed;
+    transform: translate(0, 0);
+    top: 0px;
+    left: 5px;
+    margin: 0;
+    padding: 0;
+    z-index: 2000;
+}
+app-menu {
+display: none;
+}
+}
+@media (max-width: 768px) {
+    app-navigation {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        margin: 0;
+        padding: 0;
+        z-index: 2000;
+    } 
+    
+app-logo {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    z-index: 2000;
+}
+app-menu {
+    position: fixed;
+    top: 17px;
+    right: 15px;
+    margin: 0;
+    padding: 0;
+    z-index: 2100;
+}
+}

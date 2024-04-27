@@ -1,0 +1,298 @@
+section {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    background: rgb(255, 199, 0);
+    background: radial-gradient(circle, rgba(255, 199, 0, 0.25) 0%, rgba(0, 0, 0, 1) 100%);
+    h2 {
+        transition: .5s;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        color: white;
+        font-weight: 100;
+        text-align: center;
+    }
+    .h2_t:hover {
+        transition: .5s;
+        transform: rotateY(-30deg);
+    }
+}
+.Title {
+    transition: .5s;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    perspective: 1000px;
+}
+.Title:hover {
+    transition: 0.5s ease-in-out;
+
+    .bar {
+        transition: 0.5s ease-in-out;
+        width: 80%;
+    }
+}
+.bar {
+    transform: translate(0, 0);
+    transition: 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+    height: 1px;
+    background-color: #4CCD99;
+    box-shadow: 0 0 10px #00ff99;
+}
+.bar2 {
+    transform: translate(0, 0);
+    transition: 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #4CCD99;
+    box-shadow: 0 0 10px #00ff99;
+}
+.bar3 {
+    transform: translate(0, 0);
+    transition: 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    height: 1px;
+    width: 0;
+    background-color: #4CCD99;
+    box-shadow: 0 0 10px #00ff99;
+}
+.herramientas {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+.super_container_scroll_block {
+    padding: 0 0 0 0;
+    margin: 0;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.Row_Container {
+    transition: .5s;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+}
+.Row {
+    transition: .5s;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 148px;
+}
+.Row_Container:hover {
+    .bar3 {
+        transition: .5s;
+        width: 70%;
+    }
+}
+.Row_h3 {
+    padding: 0;
+    margin: 0;
+    width: 5%;
+    height: 100%;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    transform: rotateX(180deg);
+    transform: rotateZ(180deg);
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color: #FFC700;
+}
+.Row_items {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #FFC700 #00ff2200;
+}
+.scroll_items {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .herramientas {
+        width: 70%;
+        height: 80%;
+    }
+    .Row_items {
+        width: 95%;
+    }
+    .Container_Card {
+        margin: 10px 20px 10px 20px;
+    }
+    .scroll_items {
+        width: auto;
+    }
+}
+@media (max-width: 768px) {
+    .herramientas {
+        width: 100%;
+        height: 80%;
+    }
+    .Row_items {
+        width: 79%;
+    }
+    .Container_Card {
+        margin: 10px 10px 10px 10px;
+    }
+    #scroll_items_lenguajes {
+        width: 600px;
+    }
+    #scroll_items_dev_tools {
+        width: 360px;
+    }
+}
+.Container_Card {
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+}
+.Card_Back {
+    transition: 1s;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(150, 150, 150);
+    overflow: hidden;
+    border-radius: 3px;
+
+}
+.Light_bar {
+    transition: .5s;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    scale: 1.6;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.Card {
+    transition: .5s;
+    padding: 0;
+    margin: 0;
+    width: 96px;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(40, 40, 40);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 3px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 80%;
+        height: 20%;
+        color: #FFC700;
+        border-bottom: 1px solid #4CCD99;
+        font-size: 70%;
+        line-height: 100%;
+    }
+}
+.Container_Card:hover {
+    transition: .5s;
+
+    .Card_Back {
+        transform: rotateY(30deg);
+        transition: .5s;
+        filter: hue-rotate(360deg);
+        rotate: -5deg;
+    }
+    .Light_bar {
+        transition: .5s;
+        background-color: aqua;
+        animation-duration: 1s;
+    }
+}
+.pop {
+    transition: 1s .5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #4CCD99;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+.icon {
+    margin: 0 0 10px 0;
+    width: 50px;
+}
