@@ -22,6 +22,8 @@ import localeEsAr from '@angular/common/locales/es-AR';
 import { CommonModule, HashLocationStrategy, LocationStrategy, registerLocaleData } from '@angular/common';
 import { Trabajo3Component } from './components/trabajo3/trabajo3.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { AcercaDeMiComponent } from './components/acerca-de-mi/acerca-de-mi.component';
+import { FooterComponent } from './components/footer/footer.component';
 registerLocaleData(localeEsAr, 'es-AR');
 
 @NgModule({
@@ -40,7 +42,9 @@ registerLocaleData(localeEsAr, 'es-AR');
     AdminComponent,
     SPAComponent,
     Trabajo3Component,
-    ProjectsComponent
+    ProjectsComponent,
+    AcercaDeMiComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

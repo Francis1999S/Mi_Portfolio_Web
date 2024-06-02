@@ -56,11 +56,31 @@ section {
     background-color: #4CCD99;
     box-shadow: 0 0 10px #00ff99;
 }
+.bar_type_2 {
+    padding: 0;
+    margin: 0;
+    width: 1px;
+    background-color: #4CCD99;
+    box-shadow: 0 0 10px #00ff99;
+}
+.Projects_Container_Container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
 .Projects_Container {
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 80%;
+    display: block;
+}
+.Scroll_Box_Project_Container {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +88,6 @@ section {
 .Tarjeta_Project {
     transition: .5s;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,8 +106,6 @@ section {
 .Project_About {
     padding: 0;
     margin: 0;
-    width: 40%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,8 +159,6 @@ section {
     cursor: pointer;
     padding: 0;
     margin: 0;
-    width: 60%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,8 +174,6 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 3px;
-    background: rgb(21,97,172);
-background: linear-gradient(270deg, rgba(21,97,172,1) 0%, rgba(25,118,210,1) 50%, rgba(52,146,238,1) 100%);
 .Image_src {
     transition: .5s;
     padding: 0;
@@ -186,31 +199,304 @@ background: linear-gradient(270deg, rgba(21,97,172,1) 0%, rgba(25,118,210,1) 50%
     right: 5px;
 }
 }
-@media (min-width: 768px) {
+.Project_Image_Color_1 {
+    background: rgb(21,97,172);
+    background: linear-gradient(270deg, rgba(21,97,172,1) 0%, rgba(25,118,210,1) 50%, rgba(52,146,238,1) 100%);
+}
+.Project_Image_Color_2 {
+    background: rgb(21, 172, 172);
+    background: linear-gradient(270deg, rgb(21, 167, 172) 0%, rgb(25, 189, 210) 50%, rgb(52, 232, 238) 100%);
+}
+.Project_Image_Color_3 {
+    background: rgb(172, 69, 21);
+    background: linear-gradient(270deg, rgb(172, 89, 21) 0%, rgb(210, 108, 25) 50%, rgb(238, 136, 52) 100%);
+}
+@media (min-width: 769px) {
     .Tarjeta_Project {
+        margin: 10px 20px 10px 20px;
         width: 600px;
         height: 300px;
         p {
             font-size: 85%;
         }
     }
+    .Project_About {
+        width: 40%;
+        height: 100%;
+    }
+    .Project_Illustration {
+        width: 60%;
+        height: 100%;
+    }
     .Tecnologia_etiquetas {
         p {
             font-size: 70%;
         }
     }
+    .Projects_Container {
+        overflow-y: hidden;
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: #FFC700 #00ff2200;
+        width: 60%;
+        height: 60%;
+    }
+    .bar_type_2 {
+        height: 70%;
+    }
+    .Scroll_Box_Project_Container {
+        padding: 0 100px 0 100px;
+        width: 150%;
+        height: 100%;
+    }
 }
 @media (max-width: 768px) {
         .Tarjeta_Project {
-            width: 95%;
-    height: 300px;
+            margin: 10px 20px 10px 20px;
+    width: 250px;
+    height: 330px;
+    flex-direction: column;
     p {
         font-size: 75%;
     }
+    }
+    .Project_About {
+        width: 100%;
+        height: 50%;
+    }
+    .Project_Illustration {
+        width: 100%;
+        height: 50%;
     }
     .Tecnologia_etiquetas {
         p {
             font-size: 60%;
         }
     }
+    .Projects_Container {
+        overflow-y: hidden;
+        overflow-x: scroll;
+        width: 90%;
+        height: 80%;
+    }
+    .bar_type_2 {
+        height: 70%;
+    }
+    .Scroll_Box_Project_Container {
+        padding: 0;
+        width: 200%;
+        height: 100%;
+    }
+}
+
+.bar {
+    transform: translate(0, 0);
+    transition: 0.5s 1s ease-in-out;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 1px;
+    background-color: #4CCD99;
+    box-shadow: 0 0 10px #00ff99;
+}
+.Container_Cards {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar2 {
+    padding: 0;
+    margin: 0;
+    width: 1px;
+    height: 350px;
+    background-color: #4CCD99;
+    box-shadow: 0 0 10px #00ff99;
+}
+.Scroll {
+    padding: 0;
+    margin: 0 0 0 0;
+    width: 70%;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #FFC700 rgba(255, 255, 255, 0);
+    display: block;
+    scroll-behavior: smooth;
+}
+.Scroll_in {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 100%;
+    display: inline-flex;
+}
+
+.Container_Card {
+    padding: 0;
+    margin: 10px 20px 10px 20px;
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+}
+.Card_Back {
+    transition: .5s;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(150, 150, 150);
+    overflow: hidden;
+    border-radius: 3px;
+
+}
+.Light_bar {
+    transition: .5s;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    scale: 1.6;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.Card {
+    transition: .5s;
+    padding: 0;
+    margin: 0;
+    width: 246px;
+    height: 296px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(40, 40, 40);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 3px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 80%;
+        height: 20%;
+        color: #FFC700;
+        border-bottom: 1px solid #4CCD99;
+        font-size: 150%;
+        line-height: 100%;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        height: 75%;
+        color: white;
+    }
+}
+.Container_Card:hover {
+    transition: .5s;
+
+.Card_Back {
+    transform: rotateY(20deg);
+    transition: .5s;
+    filter: hue-rotate(360deg);
+}
+}
+.Numero {
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: #FFC700;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+    left: 5px;
+    font-weight: bold;
+}
+.pop {
+    transition: 1s .5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+    background-color: #4CCD99;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+.img_scroll {
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: auto;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    z-index: 10;
+}
+.img_scroll_cards {
+    transition: .5s;
+    padding: 0;
+    margin: 0 15px 0 0;
+    width: 30px;
+    height: auto;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.img_scroll_cards:hover {
+    transition: .2s;
+    scale: 1.3;
+}
+.img_scroll_cards:active {
+    transition: .1s;
+    scale: 0.8;
+}
+.img_scroll_cards2 {
+    transition: .5s;
+    padding: 0;
+    margin: 0 0 0 15px;
+    width: 30px;
+    height: auto;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+.img_scroll_cards2:hover {
+    transition: .2s;
+    scale: 1.3;
+}
+.img_scroll_cards2:active {
+    transition: .1s;
+    scale: 0.8;
 }

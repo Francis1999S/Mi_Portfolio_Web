@@ -20,4 +20,10 @@ export class NavigationComponent {
       seccionDestino.scrollIntoView({ behavior: 'smooth' });
     }
   }
+  goToAcercaDe(): void {
+    var seccionDestino = document.getElementById('Seccion_Acerca-de-mi');
+    if (seccionDestino) {
+      seccionDestino.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

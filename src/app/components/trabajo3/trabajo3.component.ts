@@ -11,4 +11,19 @@ export class Trabajo3Component {
   navigateToProject() {
     this.router.navigate(['/Proyectos']);
   }
+  navigateTo(url: string) {
+    window.open(url, '_blank');
+  }
+  scrollR(): void {
+    var scroll = document.getElementById('Scroll_Projects_Cards');
+    if (scroll) {
+    scroll.scrollLeft += 300;
+    }
+      }
+      scrollL(): void {
+        var scroll = document.getElementById('Scroll_Projects_Cards');
+        if (scroll) {
+        scroll.scrollLeft -= 300;
+        }
+          }
 }

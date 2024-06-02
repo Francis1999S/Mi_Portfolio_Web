@@ -44,17 +44,16 @@
 }
 .Router_Outlet {
     animation-name: Intro_Loaded_Page;
-    animation-duration: 5s;
+    animation-duration: 2s;
     padding: 0;
     margin: 0;
 }
 @keyframes Intro_Loaded_Page {
     0% {
-        scale: 0.7;
+        scale: 0.8;
         opacity: 0;
         filter: saturate(0);
-        rotate: -2deg;
-        transform: rotateY(15deg);
+        transform: rotateY(1deg);
     }
     50% {
         opacity: 1;
@@ -63,7 +62,6 @@
         filter: saturate(0);
     }
     100% {
-        rotate: 0;
         scale: 1;
         filter: saturate(100%);
         transform: rotateX(0deg);
