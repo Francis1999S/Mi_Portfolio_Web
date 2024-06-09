@@ -78,7 +78,7 @@ section {
     perspective: 1000px;
     .Foto_Perfil {
         transition: .5s;
-        border-radius: 80px;
+        border-radius: 15vw;
         box-shadow: 0 0 10px #00ff99;
         border: 1px solid #4CCD99;
     }
@@ -107,7 +107,7 @@ section {
         .buttons {
             transition: .3s;
             border: none;
-            outline: none;
+            outline: 2px solid rgba(0, 255, 255, 0);
             background-color: rgba(255, 255, 255, 0.3);
             border-radius: 20px;
             cursor: pointer;
@@ -117,8 +117,8 @@ section {
         }
         .buttons:hover {
             transition: .3s;
-            scale: 1.1;
-            filter: brightness(130%);
+            scale: 1.05;
+            outline: 2px solid aqua;
         }
     }
     .Card_Personal_Info:hover {
@@ -129,11 +129,12 @@ section {
 }
 @media (min-width: 769px) {
     .Foto_Perfil {
-        width: 160px;
+        width: 18vw;
     }
     .Card_Personal_Info {
         width: 70%;
-        height: 25vw;
+        height: auto;
+        padding: 20px;
         .foto_perfil_container {
             margin: 0;
             padding: 0;
@@ -165,11 +166,12 @@ section {
 }
 @media (max-width: 768px) {
     .Foto_Perfil {
-        width: 120px;
+        width: 30vw;
     }
     .Card_Personal_Info {
         width: 90%;
-        height: 80%;
+        height: auto;
+        padding: 15px;
         flex-direction: column;
         .foto_perfil_container {
             margin: 0;

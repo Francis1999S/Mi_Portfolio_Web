@@ -229,8 +229,8 @@ position: absolute;
     }
 img:hover {
     transition: .2s;
-    transform: rotate(-27deg);
-    filter: brightness(140%);
+    transform: rotate(-15deg);
+    filter: hue-rotate(90deg);
     scale: 1.1;
 }
 }

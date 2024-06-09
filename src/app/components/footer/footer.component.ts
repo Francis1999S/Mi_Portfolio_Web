@@ -33,4 +33,10 @@ export class FooterComponent {
       seccionDestino.scrollIntoView({ behavior: 'smooth' });
     }
   }
+  goToExperiments(): void {
+    var seccionDestino = document.getElementById('Seccion_Experimentos');
+    if (seccionDestino) {
+      seccionDestino.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
