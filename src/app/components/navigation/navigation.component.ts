@@ -26,4 +26,16 @@ export class NavigationComponent {
       seccionDestino.scrollIntoView({ behavior: 'smooth' });
     }
   }
+  goToProyectos(): void {
+    var seccionDestino = document.getElementById('Seccion_Trabajo_Proyectos');
+    if (seccionDestino) {
+      seccionDestino.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  goToExperimentos(): void {
+    var seccionDestino = document.getElementById('Seccion_Experimentos');
+    if (seccionDestino) {
+      seccionDestino.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

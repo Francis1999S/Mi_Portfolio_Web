@@ -202,3 +202,47 @@ section {
     bottom: 4px;
     right: 4px;
 }
+.Social_Media {
+    animation-name: Intro_Social_Media;
+    animation-duration: .5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    width: auto;
+position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba(40, 40, 40, 0.7);
+    border-radius: 3px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    img {
+        margin: 0 15px 0 15px;
+        width: 30px;
+        cursor: pointer;
+        transition: .5s;
+    }
+img:hover {
+    transition: .2s;
+    transform: rotate(-27deg);
+    filter: brightness(140%);
+    scale: 1.1;
+}
+}
+.Social_Media:hover {
+    transition: 0.5s;
+    background-color: rgba(100, 100, 100, 0.7);
+}
+@keyframes Intro_Social_Media {
+    from {
+        top: -70px;
+    }
+    to {
+        top: 0;
+    }
+}

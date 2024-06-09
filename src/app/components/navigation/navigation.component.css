@@ -60,6 +60,16 @@ section {
         top: -10px;
         right: 105px;
     }
+    .pop5 {
+        transition: .5s .9s ease-in-out;
+        top: -10px;
+        right: 105px;
+    }
+    .pop6 {
+        transition: .5s 1s ease-in-out;
+        top: -10px;
+        right: 105px;
+    }
     section {
         height: 250px;
         width: 120px;
@@ -82,6 +92,18 @@ section {
         width: 185px;
         border-bottom: 1px solid #4CCD99;
     }
+    #li_Proyectos:hover {
+        transition: 0.5s;
+        color: white;
+        width: 183px;
+        border-bottom: 1px solid #4CCD99;
+    }
+    #li_Experimentos:hover {
+        transition: 0.5s;
+        color: white;
+        width: 210px;
+        border-bottom: 1px solid #4CCD99;
+    }
     #li_Acerca:hover {
         transition: 0.5s;
         color: white;
@@ -101,20 +123,28 @@ section {
         background-color: rgba(100, 100, 100, 0.7);
       }
         .pop1 {
-            transition: .5s .5s ease-in-out;
-            top: 42px;
+            transition: .3s ease-in-out;
+            top: 25px;
         }  
         .pop2 {
-            transition: .5s .6s ease-in-out;
-            top: 96px;
+            transition: .3s .05s ease-in-out;
+            top: 64px;
         }
         .pop3 {
-            transition: .5s .7s ease-in-out;
-            top: 151px;
+            transition: .3s .1s ease-in-out;
+            top: 103px;
         }
         .pop4 {
-            transition: .5s .8s ease-in-out;
-            top: 206px;
+            transition: .3s .15s ease-in-out;
+            top: 142px;
+        }
+        .pop5 {
+            transition: .3s .20s ease-in-out;
+            top: 181px;
+        }
+        .pop6 {
+            transition: .3s .25s ease-in-out;
+            top: 220px;
         }
     }
 }
@@ -164,36 +194,19 @@ section {
         right: 125px;
         top: -55px;
     }
+    .pop5 {
+        transition: .5s .8s ease-in-out;
+        right: 125px;
+        top: -55px;
+    }
+    .pop6 {
+        transition: .5s .8s ease-in-out;
+        right: 125px;
+        top: -55px;
+    }
 }
 
-.pop1 {
-    padding: 0;
-    margin: 0;
-    width: 5px;
-    height: 5px;
-    border-radius: 1px;
-    background-color: #4CCD99;
-    position: absolute;
-}
-.pop2 {
-    padding: 0;
-    margin: 0;
-    width: 5px;
-    height: 5px;
-    border-radius: 1px;
-    background-color: #4CCD99;
-    position: absolute;
-}
-.pop3 {
-    padding: 0;
-    margin: 0;
-    width: 5px;
-    height: 5px;
-    border-radius: 1px;
-    background-color: #4CCD99;
-    position: absolute;
-}
-.pop4 {
+.pop1, .pop2, .pop3, .pop4, .pop5, .pop6 {
     padding: 0;
     margin: 0;
     width: 5px;

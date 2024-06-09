@@ -24,6 +24,7 @@ import { Trabajo3Component } from './components/trabajo3/trabajo3.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { AcercaDeMiComponent } from './components/acerca-de-mi/acerca-de-mi.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ExperimentosComponent } from './components/experimentos/experimentos.component';
 registerLocaleData(localeEsAr, 'es-AR');
 
 @NgModule({
@@ -44,7 +45,8 @@ registerLocaleData(localeEsAr, 'es-AR');
     Trabajo3Component,
     ProjectsComponent,
     AcercaDeMiComponent,
-    FooterComponent
+    FooterComponent,
+    ExperimentosComponent
   ],
   imports: [
     BrowserModule,
