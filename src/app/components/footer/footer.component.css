@@ -4,7 +4,7 @@ footer {
     width: 100%;
     background-image: url('../../../assets/Backgrounds/Projects_Background_H.png');
     background-position: center center;
-    color: rgb(150, 150, 150);
+    color: rgb(190, 190, 190);
     scroll-behavior: smooth;
     scroll-snap-align: center;
     display: flex;
@@ -26,6 +26,7 @@ footer {
                 transition: .3s;
                 font-size: 110%;
                 text-shadow: 0 0 5px black;
+                
                 img {
                     height: 15px;
                     margin: 0 10px 0 0;
@@ -45,8 +46,16 @@ footer {
         flex-direction: column;
         align-items: start;
         justify-content: start;
+        .ul_1 {
+            margin: 20px 0 0 0;
+        }
+        .ul_2 {
+            margin: 0;
+        }
+        .ul_3 {
+            margin: -40px 0 0 0;
+        }
         ul {
-            margin: 35px 0 0 30px;
             li {
                 cursor: pointer;
                 transition: .3s;
@@ -76,7 +85,7 @@ footer {
     border-radius: 5px;
 }
 .Credits_footer {
-
+    text-align: center;
     margin: 0;
     padding: 0;
     position: absolute;
