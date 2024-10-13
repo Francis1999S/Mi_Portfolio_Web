@@ -242,6 +242,7 @@ section {
     align-items: center;
     flex-direction: column;
     background-color: rgb(40, 40, 40);
+    border: 2px rgb(150, 150, 150);
     position: absolute;
     top: 2px;
     left: 2px;

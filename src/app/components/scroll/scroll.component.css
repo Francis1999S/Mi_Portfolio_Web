@@ -10,9 +10,9 @@ body {
     background-color: rgb(100, 100, 100);
 }
 .Light_bar {
-    rotate: -35deg;
+    rotate: -40deg;
     animation-name: Light_Animation;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     padding: 0;
@@ -58,10 +58,12 @@ section {
 }
 
 @media (min-width: 768px) {
+    .Light_bar {
+        filter: blur(20px);
+    }
     section {
-        background-image: url('../../../assets/Backgrounds/Background_2_720.webp');
-        background-size: 100% 100%;
-        background-position: center center;
+        background-image: url('../../../assets/Backgrounds/ANIM_BACKGROUND.png');
+        background-position: start center;
     }
 
     @keyframes BackgroundAnimation {
@@ -70,7 +72,7 @@ section {
         }
 
         to {
-            background-size: 120%;
+            background-size: 105%;
         }
     }
 }
@@ -78,16 +80,16 @@ section {
 @media (max-width: 768px) {
     section {
         background-image: url('../../../assets/Backgrounds/Background_1_720.webp');
-        background-size: auto 100%;
+        background-position: start center;
     }
 
     @keyframes BackgroundAnimation {
         from {
-            background-size: auto 100%;
+            background-size: 150%;
         }
 
         to {
-            background-size: auto 120%;
+            background-size: 155%;
         }
     }
 }
